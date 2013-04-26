@@ -1,0 +1,136 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   ---> This is the file you want to compile <---
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{report}
+\usepackage{auhonors}
+
+% this is just for lots of latin words. you probably don't need it.
+\usepackage{lipsum}
+
+% % TikZ
+% \usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz, tkz-euclide, pgf}
+    \usetikzlibrary{calc, arrows, shapes}
+    \usetkzobj{angles} % important you want to use angles
+
+\usepackage{caption}
+\captionsetup[table]{skip=10pt}
+
+% underline emphasis in the prefatory pages
+\usepackage{ulem}
+% URLs...
+\usepackage{url}
+% enable expand math support
+\usepackage{amsmath}
+% enable graphic support
+\usepackage{graphicx}
+
+% table stuff
+% \usepackage{array}
+% \newcolumntype{$}{>{\global\let\currentrowstyle\relax}}
+% \newcolumntype{^}{>{\currentrowstyle}}
+% \newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+%   #1\ignorespaces
+% }
+
+% for list of abbreviations
+% \usepackage[intoc]{nomencl}
+\usepackage{nomencl}
+% used in leiu of terminal commands
+\makenomenclature
+
+% Appendices are written like regular chapters
+\usepackage[toc,page]{appendix}
+\appendixpageoff\appendixtocoff % keep out the useless page and toc entry
+
+% click on links to jump in pdf - should come last of usepackages
+\usepackage{hyperref}
+\hypersetup{}
+
+% May want theorems numbered by chapter
+% \newtheorem{theorem}{Theorem}[chapter]
+
+%%%%%% Define variables
+\title{Latin Words Formatted for an Honors Thesis}
+\author{Your Name}
+\date{May 5, 2013}
+\copyrightyear{2013}
+\adviser{Your Advisor}
+\professor{Your Advisor \\ Their Position \\ Their Department}
+\professor{Constance C. Relihan \\ Associate Provost for \\ Undergraduate Studies}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Prefatory Pages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{romanpages}
+
+\ApprovalPage
+\TitlePage
+\CopyrightPage
+
+\begin{vita}
+I was born and currently remain alive.
+\end{vita}
+
+\begin{abstract}
+This paper is written using code which will be copied and pasted into other papers written by undergraduates who don't want to write their own style file.
+\end{abstract}
+
+\begin{acknowledgments}
+You probably owe somebody something for getting you where you are today.
+\end{acknowledgments} 
+
+\style{ASME}
+\software{\LaTeX, Ubuntu Linux 12.04.1}
+\StylePage
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% nomenclature
+\renewcommand{\nomname}{\sc List of Abbreviations}
+\printnomenclature[0.75in]
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+
+% stop using roman numerals.
+\end{romanpages}
+
+\normalem       % Make italics the default for \em
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Paper body
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\input{chapter_1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Appendices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{appendices}
+\input{chapter_appendices}
+\end{appendices}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Bib
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{asmems4}
+\bibliography{thesis}
+
+% stuff you don't cite explicitly but still want in there.
+\nocite{travisdiss}
+\nocite{travisshort}
+\nocite{calgary}
+
+
+\end{document}
