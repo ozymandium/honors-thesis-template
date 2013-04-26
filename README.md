@@ -4,7 +4,7 @@ A starting point for writing your Auburn University Honors Thesis using LaTeX
 
 
 If you're experienced with TeX (specifically LaTeX here), the style file is
-located in ./thesis/sty/auhonors.sty  
+located in the `thesis` folder.
 It is an amalgamation of code from various files (some about a decade old as of this writing), but worked well when I wrote my honors thesis, so consider yourself warned.
 
 If you don't have any prior experience, there is an abundance of examples out on the interwebs. [This SE site](http://tex.stackexchange.com/) and [this site](http://www.texample.net/) are two great places to start.
@@ -27,7 +27,7 @@ Either way, as a habitual user of Microsoft products, you will want to:
 - Have a good cry
 
 
-### Typesettings ###
+### Typesetting ###
 
 `thesis.tex` was compiled with pdfTeX 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian)
 
