@@ -15,16 +15,8 @@ If you don't want to use the all caps convention, you need to remove `\sc` from 
 
 
 ### Windows ###
-I have put all the figures into a `figs` folder, so if you're using Windows you will want to do one of the following:   
+I have put all the figures into the `figs` folder, so if you're using Windows for some reason, you will want to change `/` in the file paths for the figures to `\`  
 
-- combine the whole thing into one folder  
-- change `/` in the file paths for the figures to `\`  
-
-Either way, as a habitual user of Microsoft products, you will want to:
-
-- Stop for a second  
-- Reevaluate the life decisions which have led you to this point
-- Have a good cry
 
 
 ### Typesetting ###
