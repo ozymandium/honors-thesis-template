@@ -13,6 +13,9 @@ If you don't have any prior experience, there is an abundance of examples out on
 ### Margins ###
 The margins are slightly larger than necessary by approx. 0.2 in, so you can fiddle with that at the top of the style file.
 
+### Bibliography ###
+I would highly recommend using JabRef to do your bibliography. The *.bst file for the bibliography style is currently that for AMSE Master's Theses. Most of those type of organizations provide a *.bst file.
+
 
 ### Headings ###
 If you don't want to use the all caps convention, you need to remove `\sc` from heading titles in the style file.
