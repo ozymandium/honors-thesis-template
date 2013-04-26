@@ -23,7 +23,7 @@ I have put all the figures into a `figs` folder, so if you're using Windows you 
 Either way, as a habitual user of Microsoft products, you will want to:
 
 - Stop for a second  
-- Reevaluate the life decsions which have led you to this point
+- Reevaluate the life decisions which have led you to this point
 - Have a good cry
 
 
